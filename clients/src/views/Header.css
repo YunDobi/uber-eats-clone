@@ -1,0 +1,9 @@
+.header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchBar {
+  width: 80vh;
+}

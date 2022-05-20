@@ -1,8 +1,12 @@
+import Header from './views/Header'
 
 function App() {
   return (
     <div className='App'>
-      <h1>hello</h1>
+      < Header />
+      <main>
+        this is main
+      </main>
     </div>
   );
 }
