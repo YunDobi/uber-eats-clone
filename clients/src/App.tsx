@@ -1,12 +1,11 @@
 import Header from './views/Header'
+import Main from './views/main/Main'
 
 function App() {
   return (
     <div className='App'>
       < Header />
-      <main>
-        this is main
-      </main>
+      <Main />
     </div>
   );
 }
