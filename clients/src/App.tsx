@@ -1,11 +1,12 @@
+import "./App.css";
 import Header from './views/Header'
-import Main from './views/main/Main'
+import Recommand from './views/recommand/Recommand'
 
 function App() {
   return (
     <div className='App'>
       < Header />
-      <Main />
+      <Recommand />
     </div>
   );
 }
