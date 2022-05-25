@@ -4,9 +4,11 @@
 
 img {
   display: block;
+  margin: 15px;
   width: 50vh;
   height: 40vh;
   opacity: 0.5;
+  transform: scale(0.8);
 }
 
 .images {

@@ -9,6 +9,7 @@ import pancake from "../../images/pancake.jpg"
 export default class CenterMode extends Component {
   render() {
     const settings = {
+      dots: true,
       className: "center",
       centerMode: true,
       infinite: true,
