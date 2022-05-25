@@ -1,14 +1,21 @@
 import Button from "@mui/material/Button"
+import "./menu.css"
 
-export default function Menu (): JSX.Element {
+type MenuType = {
+  menu: string
+}
 
-  const menus = ["first", "second", "third", "fourth"]
-    return(
-      <div>
-        <div style={{width: "80rem", height: "100px", border: "1px solid #000", margin:"auto"}}>
-          <Button variant="text" size="medium" color="primary">Asian</Button>
-        </div>
+export default function Menu(): any {
+ const menus = ["Fast Food", "Pizza", "Salad", "Steak"]
+
+    return (
+      <div className="buttonContainer" style={{width: "70rem", height: "80px", border: "1px solid #000", margin:"auto"}}>
+        {menus.map((menu: string) => {
+          return(
+          <Button variant="text" size="medium" color="primary" key={menu} className="menuButton">{menu}</Button>
+          )
+        })}
       </div>
-    )
+  )
 }
 
