@@ -3,5 +3,10 @@
 }
 
 .buttonContainer {
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70rem;
+  height: 80px;
+  border: 1px solid #000;
 }
