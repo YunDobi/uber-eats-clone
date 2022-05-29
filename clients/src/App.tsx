@@ -2,6 +2,7 @@ import "./App.css";
 import Header from './views/Header'
 import Recommand from './views/recommand/Recommand'
 import Menu from "./views/menu/menu";
+import RestaurantsList from "./views/Restaurants/list";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       < Header />
       <Recommand />
       <Menu />
+      <RestaurantsList />
     </div>
   );
 }
