@@ -21,16 +21,16 @@ export default class CenterMode extends Component {
       <div className="container">
         <Slider {...settings} className="images">
           <div className="image">
-            <img src={first} alt="" />
+            <img src={first} alt="" className="RecImages"/>
           </div>
           <div className="image">
-            <img src={pizza} alt="" />
+            <img src={pizza} alt="" className="RecImages"/>
           </div>
           <div className="image">
-            <img src={salad} alt="" />
+            <img src={salad} alt="" className="RecImages"/>
           </div>
           <div className="image">
-            <img src={pancake} alt="" />
+            <img src={pancake} alt="" className="RecImages"/>
           </div>
         </Slider>
       </div>

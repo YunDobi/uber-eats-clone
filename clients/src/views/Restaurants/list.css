@@ -3,7 +3,13 @@
   border-radius: 20px; 
   width: 65rem;
   height: 100px;
-  margin: 10px auto;
-  justify-content: center;
+  margin: 20px 40px !important;
+  /* justify-content: space-around; */
   text-align: center;
+  display: flex;
+}
+
+.restaurant:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
 }

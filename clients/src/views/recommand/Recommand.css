@@ -2,7 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-img {
+.RecImages {
   display: block;
   margin: 15px;
   width: 50vh;
