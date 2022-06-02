@@ -15,16 +15,18 @@ export default function RestaurantsList () {
 
   let tempList = ["Sakura", "Keg", "Salad Bar", "Pizza Pizza"]
   let images: string[] = [first, pancake, salad,pizza]
-  function random(max:number) {
-    return Math.floor(Math.random() * max) 
-  }
+  let i: number = 0;
+
+  // function random(max:number) {
+  //   return Math.floor(Math.random() * max) 
+  // }
 
   return (
       <main style={{ width: '70rem', margin: '10px auto', overflow: 'hidden'}} id="Body">
         {tempList.map((item: string) => {
           return(
             <div className="restaurant" onClick={() => {console.log(item)}}>
-              <img src={images[random(images.length)]} alt="" style={{width: "10rem", height: "150px", margin: "auto 0", borderRadius: "20px"}}/>
+              <img src={images[i++]} alt="" style={{width: "10rem", height: "150px", margin: "auto 0", borderRadius: "20px"}}/>
               <p style={{marginLeft: "10px"}}>{item}</p>
             </div>
           )
