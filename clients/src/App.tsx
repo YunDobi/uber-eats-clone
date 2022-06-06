@@ -1,28 +1,24 @@
 import "./App.css";
-import Header from './views/Header'
-import Recommand from './views/recommand/Recommand'
-import Menu from "./views/menu/menu";
-import RestaurantsList from "./views/Restaurants/list";
-// const {Pool} = require("pg");
-// const db = new Pool({
-//   user: process.env.DB_USER,
-//   password: process.env.DB_PASS,
-//   host: process.env.DB_HOST,
-//   database: process.env.DB_NAME,
-//   port: process.env.DB_PORT
-// });
-
-// db.connect()
-//   .then(() => console.log('db connected'))
+import Recommend from "./views/recommand/Recommand"
+import Home from "./views/Routers/home";
+import Detail from "./views/Routers/detail";
+import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
 
 
 function App() {
+ 
+  let tempList: string[] = ["Sakura", "Keg", "Salad Bar", "Pizza Pizza"]
+  // let images: string[] = [first, pancake, salad,pizza]
+
+
   return (
     <div className='App'>
-      < Header />
-      <Recommand />
-      <Menu />
-      <RestaurantsList />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/detail/:id" element={<Detail />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
