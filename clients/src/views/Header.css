@@ -6,6 +6,10 @@
   border-bottom: 1px solid black;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 #searchBar {
   padding: 15px;
   width: 80vh;
