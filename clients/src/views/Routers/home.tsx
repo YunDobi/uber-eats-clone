@@ -12,7 +12,7 @@ function Home() {
     <div className='Home'>
         < Header />
         <Recommand />
-        <Menu />
+        {/* <Menu /> */}
         <RestaurantsList/>
     </div>
   );

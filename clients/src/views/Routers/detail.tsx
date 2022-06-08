@@ -4,6 +4,7 @@ import first from "../../images/first.jpg";
 import pancake from "../../images/pancake.jpg";
 import salad from "../../images/salad.jpg";
 import pizza from "../../images/pizza.jpg";
+import RestaurantMenu from "../Restaurants/RestaurantsMenu";
 
 
 function Detail() {
@@ -19,8 +20,8 @@ function Detail() {
       <img src={images[imageID]} alt="" style={{width: "90rem", margin: "0 auto"}}/>
     </div>
     <div className='detailBody' style={{border:"1px solid black", width: '70rem', margin: '10px auto', overflow: 'hidden'}}>
-      <h3>{tempList[imageID]}</h3>
-      
+      <h3 style={{textAlign: "center"}}>{tempList[imageID]}</h3>
+      <RestaurantMenu />
     </div>
     </>
   )

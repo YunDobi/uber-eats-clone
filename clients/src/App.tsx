@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-ro
 
 function App() {
  
-  let tempList: string[] = ["Sakura", "Keg", "Salad Bar", "Pizza Pizza"]
+  // let tempList: string[] = ["Sakura", "Keg", "Salad Bar", "Pizza Pizza"]
   // let images: string[] = [first, pancake, salad,pizza]
 
 
