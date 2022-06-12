@@ -1,12 +1,19 @@
 // import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "./list.css"
 import first from "../../images/first.jpg";
 import pancake from "../../images/pancake.jpg";
 import salad from "../../images/salad.jpg";
 import pizza from "../../images/pizza.jpg";
+import { Rating } from 'react-simple-star-rating'
 
 export default function RestaurantsList () {
+  const [rating, setRating] = useState(0) // initial rating value
+
+  const handleRating = (rate: number) => {
+    setRating(rate)
+    // other logic
+  }
 
   let tempList = ["Fristfood", "Secondfood", "Third food", "Fourth food"]
   let images: string[] = [first, pancake, salad,pizza]
@@ -21,7 +28,7 @@ export default function RestaurantsList () {
               <img src={images[i++]} alt="" style={{width: "10rem", height: "150px", margin: "auto 0", borderRadius: "20px"}}/>
               <p style={{marginLeft: "10px"}}>{item}</p>
             </div>
-            <p style={{margin: "10px"}}>rating</p>
+            <Rating onClick={() => console.log(rating)} ratingValue={rating} /* Available Props */ />
           </main>
 
         )
